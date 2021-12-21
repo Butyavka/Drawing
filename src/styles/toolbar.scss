@@ -2,4 +2,56 @@
 
 .toolbar {
     height: $toolbar-height;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 2px 5px gray;
+    z-index: 20;
+    &__button-box {
+        display: flex;
+        column-gap: 10px;
+        margin: 0 10px;
+    }
+    &__button {
+        width: 24px;
+        height: 24px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-size: cover;
+    }
+    .brush {
+        background: url("../assets/icons/brush.svg") no-repeat center center;
+    }
+    .rect {
+        background: url("../assets/icons/rect.svg") no-repeat center center;
+    }
+    .circle {
+        background: url("../assets/icons/circle.svg") no-repeat center center;
+    }
+    .eraser {
+        background: url("../assets/icons/eraser.svg") no-repeat center center;
+    }
+    .line {
+        background: url("../assets/icons/line.svg") no-repeat center center;
+    }
+    .undo {
+        background: url("../assets/icons/undo.svg") no-repeat center center;
+    }
+    .redo {
+        background: url("../assets/icons/redo.svg") no-repeat center center;
+    }
+    .save {
+        background: url("../assets/icons/save.svg") no-repeat center center;
+    }
+}
+.setting-bar {
+    justify-content: flex-start;
+    column-gap: 10px;
+    top: $toolbar-height;
+    padding: 0 10px;
+    z-index: 19;
 }
